@@ -6,6 +6,7 @@
     height: auto;
 }
 
+/* nav mobile */
 .nav p {
     margin: 0;
     padding: 10px;
@@ -17,21 +18,31 @@ button {
 }
 
 .btn-home {
-    background-color: #d8d4d3;
+    background-color: rgba(216, 212, 211, 0.5);
 }
 
 .btn-categories {
-    background-color: #f7eedd;
+    background-color: rgba(247, 238, 221, 0.5);
 }
 
 .btn-collections {
-    background-color: #e3e8eb;
+    background-color: rgba(227, 232, 235, 0.5);
 }
 
 .btn-sale {
-    background-color: #e0bcac;
+    background-color: rgba(224, 188, 172, 0.5);
 }
 
+.category-links, .collection-links {
+    display: none;
+}
+
+.category-links p, .collection-links p {
+    padding: 5px;
+    color: #bea594;
+}
+
+/* nav pc */
 nav .row {
     height: 50px;
 }
