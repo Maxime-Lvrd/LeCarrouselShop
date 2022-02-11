@@ -48,3 +48,4 @@ btnSale.addEventListener("click", function() {
     categoryLinks.style.display = "none";
     collectionLinks.style.display = "none";
 })
+
