@@ -22,6 +22,7 @@ btnCategories.addEventListener("click", function() {
     collectionLinks.style.display = "none";
     if (categoryLinks.style.display == "block") {
         categoryLinks.style.display = "none";
+        btnCategories.classList = "col-10 m-1 border btn-categories";
     } else {
         categoryLinks.style.display = "block";
     }
@@ -35,6 +36,7 @@ btnCollections.addEventListener("click", function() {
     categoryLinks.style.display = "none";
     if (collectionLinks.style.display == "block") {
         collectionLinks.style.display = "none";
+        btnCollections.classList = "col-10 m-1 border btn-collections";
     } else {
         collectionLinks.style.display = "block";
     }

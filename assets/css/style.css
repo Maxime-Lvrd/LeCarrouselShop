@@ -25,6 +25,12 @@ button {
     background-color: rgba(216, 212, 211, 0.5);
 }
 
+.btn-home a {
+    display: block;
+    margin: 0;
+    padding: 10px;
+}
+
 .btn-categories {
     background-color: rgba(247, 238, 221, 0.5);
 }
@@ -129,10 +135,18 @@ span {
     transform: scale(1.1);
 }
 
+/* footer mobile */
+.footer {
+    display: none;
+    font-size: 10px;
+}
+
+/* footer pc */
 footer {
     background-image: url(../img/footer.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    display: none;
 }
 
 footer p {
@@ -235,5 +249,11 @@ nav .dropdown:hover {
     }
     h2 {
         margin: 10px;
+    }
+    .footer-pc {
+        display: none;
+    }
+    .footer {
+        display: inline;
     }
 }

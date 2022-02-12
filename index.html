@@ -14,6 +14,7 @@
 <body>
     <div class="container-fluid">
 
+        <!-- nav mobile -->
         <div class="nav">
             <!-- Button trigger modal -->
             <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -30,7 +31,7 @@
                         </div>
                         <div class="modal-body row py-2">
                             <div class="col-10 m-1 border btn-home">
-                                <p>Accueil</p>
+                                <a href="index.html">Accueil</a>
                             </div>
                             <div class="col-10 m-1 border btn-categories">
                                 <p>Catégories</p>
@@ -79,6 +80,7 @@
             </div>
         </div>
 
+        <!-- nav pc -->
         <nav>
             <div class="row justify-content-around m-auto">
                 <div class="col-4">
@@ -136,10 +138,12 @@
             </div>
         </nav>
 
+        <!-- photo accueil -->
         <div class="row carrousel mb-2">
             <img src="assets/img/banner.jpg" alt="" class="col-12 p-0 h-100">
         </div>
 
+        <!-- carousel collections -->
         <div class="row justify-content-between collections text-center">
             <h2><span>COLLECTIONS</span></h2>
             <div class="col-4 box">
@@ -159,6 +163,7 @@
             </div>
         </div>
 
+        <!-- photos categories -->
         <div class="row justify-content-between categories text-center">
             <h2><span>CATEGORIES</span></h2>
             <div class="category col-6 col-md-3">
@@ -175,8 +180,14 @@
             </div>
         </div>
 
-        <footer class="row mt-5 p-3 justify-content-center">
+        <!-- footer mobile -->
+        <div class="footer text-center">
+            <p class="m-0"><a href="">Confidentialité et cookies</a> | <a href="">Conditions générales</a></p>
+            <p><i class="far fa-copyright"></i> 2022 LE CARROUSEL SHOP</p>
+        </div>
 
+        <!-- footer pc -->
+        <footer class="row mt-5 p-3 justify-content-center footer-pc">
             <div class="col-7">
                 <div class="row">
                     <div class="col-3 subtitles">
@@ -212,7 +223,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="col-3 text-center">
                 <p class="subtitle">LE CARROUSEL SHOP</p>
                 <div>
@@ -225,12 +235,10 @@
                             class="fab fa-instagram p-1"></i></a>
                 </div>
             </div>
-
             <div class="col-12 text-center mt-5">
                 <p><b>LE CARROUSEL SHOP</b></p>
                 <p class="copyright"><i class="far fa-copyright"></i> 2022 LE CARROUSEL SHOP All Rights Reserved</p>
             </div>
-
         </footer>
 
     </div>
