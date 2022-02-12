@@ -118,16 +118,26 @@ span {
 }
 
 .categories {
-    padding: 30px 20px;
+    padding: 30px 50px;
 }
 
 .collection {
     height: auto;
 }
 
+.collection img,
+.category img {
+    opacity: 0.6;
+}
+
+.collection img:hover,
+.category img:hover {
+    opacity: 1;
+}
+
 .category {
-    height: 400px;
-    padding: 0;
+    height: 350px;
+    padding: 10px;
 }
 
 .collection:hover,
