@@ -16,7 +16,7 @@
     padding: 10px;
 }
 
-button {
+.nav button {
     border: none;
     background-color: white;
 }
@@ -75,10 +75,11 @@ h1 {
     font-weight: bold;
 }
 
-.carrousel {
+.banner {
     height: 700px;
 }
 
+/* Catégories et collections */
 h2 {
     position: relative;
     margin: 30px 0;
@@ -108,7 +109,7 @@ h2::after {
     z-index: -2;
 }
 
-span {
+.categories span, h2 span {
     background: white;
     padding: 0 10px;
 }
@@ -144,6 +145,97 @@ span {
 .category:hover {
     transform: scale(1.1);
 }
+
+/* Carousel mobile */
+.carousel {
+    display: none;
+}
+
+/* Carousel pc */
+html, body, main {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #carousel {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+  }
+  #carousel div {
+    position: absolute;
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    opacity: 1;
+  }
+  #carousel div img {
+    width: 400px;
+    height: 400px;
+    transition: width 1s;
+  }
+  #carousel div.hideLeft {
+    left: 0%;
+    opacity: 0;
+    transform: translateY(50%) translateX(-50%);
+  }
+  #carousel div.hideLeft img {
+    width: 200px;
+    height: 200px;
+  }
+  #carousel div.hideRight {
+    left: 100%;
+    opacity: 0;
+    transform: translateY(50%) translateX(-50%);
+  }
+  #carousel div.hideRight img {
+    width: 200px;
+    height: 200px;
+  }
+  #carousel div.prev {
+    z-index: 5;
+    left: 30%;
+    transform: translateY(50px) translateX(-50%);
+  }
+  #carousel div.prev img {
+    width: 300px;
+    height: 300px;
+  }
+  #carousel div.prevLeftSecond {
+    z-index: 4;
+    left: 15%;
+    transform: translateY(50%) translateX(-50%);
+    opacity: 0.7;
+  }
+  #carousel div.prevLeftSecond img {
+    width: 200px;
+    height: 200px;
+  }
+  #carousel div.selected {
+    z-index: 10;
+    left: 50%;
+    transform: translateY(0px) translateX(-50%);
+  }
+  #carousel div.next {
+    z-index: 5;
+    left: 70%;
+    transform: translateY(50px) translateX(-50%);
+  }
+  #carousel div.next img {
+    width: 300px;
+    height: 300px;
+  }
+  #carousel div.nextRightSecond {
+    z-index: 4;
+    left: 85%;
+    transform: translateY(50%) translateX(-50%);
+    opacity: 0.7;
+  }
+  #carousel div.nextRightSecond img {
+    width: 200px;
+    height: 200px;
+  }
+
 
 /* footer mobile */
 .footer {
@@ -240,12 +332,21 @@ nav .dropdown:hover {
         display: block;
     }
 
-    .carrousel {
+    .banner {
         height: 25%;
     }
 
     .collections {
         padding: 0 0;
+    }
+    .carousel {
+        display: block;
+    }
+    #carousel {
+        display: none;
+    }
+    .carousel-item {
+        height: 366px;
     }
     .categories {
         padding: 10px 0;
@@ -254,6 +355,10 @@ nav .dropdown:hover {
         height: 200px;
         padding: 0;
     }
+    .collection img,
+    .category img {
+    opacity: 1;
+}
     .box {
         padding: 0;
     }
