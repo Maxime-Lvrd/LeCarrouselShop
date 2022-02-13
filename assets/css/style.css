@@ -51,8 +51,12 @@ h5 {
 
 .navbar-mobile P {
     font-family: 'Festive', cursive;
-    font-size: 27px;
+    font-size: 25px;
     font-weight: bold;
+}
+
+.navbar-mobile i {
+    color: black;
 }
 
 .modal-header {
