@@ -6,6 +6,23 @@
     height: auto;
 }
 
+h5 {
+    background-color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px black;
+    padding: 5px 0;
+}
+.new {
+    background-color: red;
+    color: white;
+    text-shadow: 1px 1px 1px white;
+    width: 20%;
+}
+.carousel-caption {
+    width: auto;
+    color: black;
+    left: 0;
+}
+
 /* nav mobile */
 .nav {
     display: none;
@@ -139,6 +156,16 @@ h2::after {
 .category {
     height: 350px;
     padding: 10px;
+    position: relative;
+}
+
+.category h5 {
+    position: absolute;
+    font-size: 17px;
+    width: 70%;
+    bottom: 5%;
+    padding: 5px;
+    box-shadow: 1px 1px 3px 0 black;
 }
 
 .collection:hover,
