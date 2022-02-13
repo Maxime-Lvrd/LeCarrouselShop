@@ -6,6 +6,13 @@
     height: auto;
 }
 
+h1 {
+    font-family: 'Festive', cursive;
+    font-size: 35px;
+    margin: 0;
+    font-weight: bold;
+}
+
 h5 {
     background-color: rgb(255, 255, 255);
     text-shadow: 1px 1px 1px black;
@@ -36,6 +43,28 @@ h5 {
 .nav button {
     border: none;
     background-color: white;
+}
+
+.navbar-mobile {
+    font-size: 18px;
+}
+
+.navbar-mobile P {
+    font-family: 'Festive', cursive;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.modal-header {
+    background-image: url(../img/footer.jpg);
+}
+
+.btn-close-white {
+    border-radius: 0;
+}
+
+.modal-content {
+    border-radius: 0;
 }
 
 .btn-home {
@@ -83,13 +112,6 @@ a {
 
 nav a:hover {
     color: #bea594;
-}
-
-h1 {
-    font-family: 'Festive', cursive;
-    font-size: 35px;
-    margin: 0;
-    font-weight: bold;
 }
 
 .banner {
@@ -145,7 +167,7 @@ h2::after {
 
 .collection img,
 .category img {
-    opacity: 0.6;
+    opacity: 0.8;
 }
 
 .collection img:hover,
