@@ -82,6 +82,9 @@ h5 {
 
 .nav button {
     border: none;
+}
+
+.bgwhite {
     background-color: white;
 }
 
@@ -151,8 +154,8 @@ h5 {
 }
 
 /* nav pc */
-nav .row {
-    height: 50px;
+nav {
+    padding: 5px 0;
 }
 
 nav .btn-user {
@@ -173,9 +176,27 @@ nav a:hover, nav .btn-user:hover {
     color: #bea594;
 }
 
+/* form connexion*/
+.sign-in {
+    border-bottom: 1px solid black;
+}
+
 form input {
     border: none;
     border-bottom: 1px solid black;
+}
+
+.inscription {
+    display: none;
+}
+
+.connexion div input, 
+.inscription div input {
+    padding: 0;
+}
+
+input:focus {
+    outline: none;
 }
 
 .btn-connect {
@@ -183,6 +204,7 @@ form input {
     background-color: #c0b4ad;
     color: white;
     font-size: 25px;
+    margin-bottom: 10px;
 }
 
 .btn-connect:hover {
