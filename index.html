@@ -36,8 +36,8 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 id="exampleModalLabel" class="px-4">Le Carrousel Shop</h1>
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <h3 id="exampleModalLabel" class="px-4">Le Carrousel Shop</h3>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body row py-2">
                             <div class="col-10 m-1 border btn-home">
@@ -133,13 +133,43 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-4 text-center">
+                <div class="col-4">
                     <div class="row align-items-center">
                         <a href="" class="col-4">Soldes</a>
                         <a href="" class="col-4">A propos</a>
                         <div class="col-4">
                             <div class="row align-items-center">
-                                <a href="" class="col-4"><i class="fas fa-user col-3"></i></a>
+                                <!-- Button modal - account -->
+                                <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal1"
+                                    class="btn-user col-4">
+                                    <i class="fas fa-user col-3"></i>
+                                </button>
+                                <!-- Modal - register -->
+                                <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h3 id="exampleModalLabel1">Bienvenue sur LE CARROUSEL SHOP</h3>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form>
+                                                    <div class="mb-3 row justify-content-center">
+                                                        <label for="exampleInputEmail1" class="col-8 p-0">Adresse e-mail</label>
+                                                        <input type="email" id="exampleInputEmail1" aria-describedby="emailHelp" class="col-8">
+                                                    </div>
+                                                    <div class="mb-3 row justify-content-center">
+                                                        <label for="exampleInputPassword1" class="col-8 p-0">Mot de passe</label>
+                                                        <input type="password" id="exampleInputPassword1" class="col-8">
+                                                    </div>
+                                                    <div class="row justify-content-center">
+                                                        <button type="submit" class="btn btn-connect col-8">Connexion</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <a href="" class="col-4"><i class="fas fa-heart col-3"></i></a>
                                 <a href="" class="col-4"><i class="fas fa-shopping-bag col-3"></i></a>
                             </div>
@@ -381,6 +411,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Festive&family=Squada+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap" rel="stylesheet">
 </body>
 
 </html>

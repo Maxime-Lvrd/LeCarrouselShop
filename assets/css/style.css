@@ -1,9 +1,13 @@
+html,
+body,
 .container-fluid,
 .row {
     width: 100%;
     margin: 0;
     padding: 0;
     height: auto;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 1.1rem;
 }
 
 h1 {
@@ -11,6 +15,42 @@ h1 {
     font-size: 35px;
     margin: 0;
     font-weight: bold;
+}
+
+h2 {
+    position: relative;
+    margin: 30px 0;
+}
+
+h2::before {
+    content: "";
+    display: block;
+    width: 40%;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    z-index: -2;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 40%;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    z-index: -2;
+}
+
+h3 {
+    font-size: 25px;
+    margin: 0;
+    padding-left: 10px;
+    color: white;
 }
 
 h5 {
@@ -60,15 +100,21 @@ h5 {
 }
 
 .modal-header {
-    background-image: url(../img/footer.jpg);
+    background-color: #c0b4ad;
+    border-radius: 0;
+    padding: 5px;
 }
 
-.btn-close-white {
+.modal-header .btn-close {
     border-radius: 0;
+    background-color: rgba(255, 255, 255, 0);
+    margin: 0;
+    margin-right: 10px;
 }
 
 .modal-content {
     border-radius: 0;
+    border: none;
 }
 
 .btn-home {
@@ -109,13 +155,39 @@ nav .row {
     height: 50px;
 }
 
+nav .btn-user {
+    border: none;
+    background-color: white;
+}
+
+#exampleModal1 {
+    top: 19px;
+}
+
 a {
     color: black;
     text-decoration: none;
 }
 
-nav a:hover {
+nav a:hover, nav .btn-user:hover {
     color: #bea594;
+}
+
+form input {
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.btn-connect {
+    border-radius: 0;
+    background-color: #c0b4ad;
+    color: white;
+    font-size: 25px;
+}
+
+.btn-connect:hover {
+    color: whitesmoke;
+    opacity: 0.8;
 }
 
 .banner {
@@ -123,35 +195,6 @@ nav a:hover {
 }
 
 /* Catégories et collections */
-h2 {
-    position: relative;
-    margin: 30px 0;
-}
-
-h2::before {
-    content: "";
-    display: block;
-    width: 40%;
-    height: 1px;
-    background: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    left: 10%;
-    top: 50%;
-    z-index: -2;
-}
-
-h2::after {
-    content: "";
-    display: block;
-    width: 40%;
-    height: 1px;
-    background: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    right: 10%;
-    top: 50%;
-    z-index: -2;
-}
-
 .categories span, h2 span {
     background: white;
     padding: 0 10px;
