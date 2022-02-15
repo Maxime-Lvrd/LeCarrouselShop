@@ -117,6 +117,6 @@ signIn.addEventListener("click", function () {
 signUp.addEventListener("click", function () {
     signIn.style.border = "none";
     signUp.style.borderBottom = "1px solid black";
-    inscription.style.display = "block";
     connexion.style.display = "none";
+    inscription.style.display = "block";
 });

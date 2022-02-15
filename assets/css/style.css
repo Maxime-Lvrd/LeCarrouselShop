@@ -404,7 +404,7 @@ footer .subtitles a {
     display: inline-block;
 }
 
-.dropbtn:hover {
+.dropbtn:hover, .sign-in:hover, .sign-up:hover {
     cursor: default;
 }
 
