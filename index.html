@@ -82,7 +82,7 @@
                         </div>
                     </div>
                 </div>
-                <p class="col-6 p-0">Le Carrousel Shop</p>
+                <p class="shopname col-6 p-0">Le Carrousel Shop</p>
                 <div class="col-4 p-0">
                     <!-- button connexion/inscription -->
                     <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2"
@@ -101,6 +101,7 @@
                                 </div>
                                 <div class="modal-body">
                                     <form>
+                                        <p class="text-center">Nous sommes heureux de vous revoir !</p>
                                         <div class="mb-3 row justify-content-center">
                                             <label for="exampleInputEmail5" class="col-8 p-0">Adresse e-mail</label>
                                             <input type="email" id="exampleInputEmail5" class="col-8">
@@ -118,7 +119,42 @@
                             </div>
                         </div>
                     </div>
-                    <a href=""><i class="fas fa-heart px-2"></i></a>
+                    <!-- button favoris -->
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal6" class="btn-user col-4 bgwhite">
+                        <i class="fas fa-heart px-2"></i>
+                    </button>
+                    <!-- Modal - connexion/inscription -->
+                    <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel2"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 id="exampleModalLabel2">Favoris</h3>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img src="assets/img/i-scar.jpg" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="col-9">
+                                            <h4 class="m-0">Illustration - Scar & Cupcakes</h4>
+                                            <p class="collection-name p-0">De la collection <a href="">Méchants et Cupcakes</a></p>
+                                            <div class="row justify-content-between align-items-center">
+                                                <div class="col-2">
+                                                    <p class="p-0">3€</p>
+                                                </div>
+                                                <div class="col-9 option-favori">
+                                                    <p class="p-0"><a href="">Ajouter au panier</a> | <a href="">Supprimer</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <a href=""><i class="fas fa-shopping-bag px-1"></i></a>
                 </div>
             </div>
@@ -193,6 +229,7 @@
                                                     <div class="col-6 sign-up">Inscription</div>
                                                 </div>
                                                 <form class="connexion">
+                                                    <p class="text-center">Nous sommes heureux de vous revoir !</p>
                                                     <div class="mb-3 row justify-content-center">
                                                         <label for="exampleInputEmail1" class="col-8 p-0">Adresse
                                                             e-mail</label>
@@ -210,6 +247,7 @@
                                                     </div>
                                                 </form>
                                                 <form class="inscription">
+                                                    <p class="text-center">Inscrivez-vous avec une adresse e-mail</p>
                                                     <div class="mb-3 row justify-content-center">
                                                         <label for="exampleInputEmail2" class="col-8 p-0">Adresse
                                                             e-mail</label>
@@ -225,20 +263,9 @@
                                                             class="col-8 p-0">Confirmation du mot de passe</label>
                                                         <input type="password" id="exampleInputPassword3" class="col-8">
                                                     </div>
-                                                    <div class="mb-3 row justify-content-center">
-                                                        <label for="exampleInputPassword4" class="col-8 p-0">Nom
-                                                            d'utilisateur</label>
-                                                        <input type="password" id="exampleInputPassword4" class="col-8">
-                                                    </div>
-                                                    <div class="mb-3 row justify-content-center">
-                                                        <label for="birthdate2" class="col-8 p-0">Date de
-                                                            naissance</label>
-                                                        <input type="date" name="birthdate2" id="birthdate2"
-                                                            class="col-8">
-                                                    </div>
                                                     <div class="row justify-content-center text-center">
                                                         <button type="submit"
-                                                            class="btn btn-connect col-8 mt-3">Connexion</button>
+                                                            class="btn btn-connect col-8 mt-3">Inscription</button>
                                                     </div>
                                                 </form>
                                             </div>

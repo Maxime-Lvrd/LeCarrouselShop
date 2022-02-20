@@ -53,6 +53,11 @@ h3 {
     color: white;
 }
 
+h4 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
 h5 {
     background-color: rgb(255, 255, 255);
     text-shadow: 1px 1px 1px black;
@@ -92,7 +97,7 @@ h5 {
     font-size: 18px;
 }
 
-.navbar-mobile P {
+.shopname {
     font-family: 'Festive', cursive;
     font-size: 25px;
     font-weight: bold;
@@ -118,6 +123,18 @@ h5 {
 .modal-content {
     border-radius: 0;
     border: none;
+}
+
+.collection-name {
+    font-size: 0.8rem;
+}
+
+.collection-name a {
+    color: #c0b4ad;
+}
+
+.option-favori {
+    font-size: 0.8rem;
 }
 
 .btn-home {
